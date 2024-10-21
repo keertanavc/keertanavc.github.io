@@ -5,7 +5,7 @@ title:  "Direct Preference Optimization With Unobserved Preference Heterogeneity
 categories: research
 authors: "<strong>Keertana Chidambaram</strong>, Karthik Vinay Seetharaman, Vasilis Syrgkanis"
 # subtitle: "CCD 2017"
-# venue: "CVPR Workshops (Computational Cameras and Displays)"
+venue: "arXiv"
 arxiv: https://arxiv.org/pdf/2405.15065
 ---
 <!-- Technical and design details of the Intel RealSense R200 and D400 series -->
