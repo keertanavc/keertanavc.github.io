@@ -6,7 +6,6 @@ categories: research
 authors: "Vahid Balazadeh, <strong>Keertana Chidambaram</strong>, Viet Nguyen, Rahul G Krishnan, Vasilis Syrgkanis"
 # subtitle: "CCD 2017"
 venue: "NeurIPS"
-venue: "Workshop on Automated Reinforcement Learning, NeurIPS"
 arxiv: https://arxiv.org/pdf/2404.07266
 ---
 <!-- Technical and design details of the Intel RealSense R200 and D400 series -->
