@@ -79,19 +79,11 @@
           {% for cat in post.categories %}
           {% if cat == 'research' %}
           <tr>
-            <!-- <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
-            </td> -->
             <td style="padding:2.5%;width:100%;vertical-align:middle">
               <h3>{{post.title}}</h3>
               <br>
-              {% endif %} -->
               {{ post.authors }}
               <br>
-              <!-- <i>{{ post.venue1 }}</i>, {{ post.date1 | date: "%Y" }}
-              {% if post.venue2 %}
-              <i>{{ post.venue2 }}</i>, {{ post.date2 | date: "%Y" }}
-              {% endif %} -->
               <p><i>{{ post.venue1 }}</i></p>
               {% if post.venue2 %}
               <p><i>{{ post.venue2 }}</i></p>
