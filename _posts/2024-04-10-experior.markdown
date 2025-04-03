@@ -4,7 +4,8 @@ title:  "Sequential Decision Making with Expert Demonstrations under Unobserved 
 categories: research
 authors: "Vahid Balazadeh, <strong>Keertana Chidambaram</strong>, Viet Nguyen, Rahul G Krishnan, Vasilis Syrgkanis"
 # subtitle: "CCD 2017"
-#date:   2024-04-10 00:00:00 +00:00
+date1:   2024-04-10 00:00:00 +00:00
+date2:   2024-04-10 00:00:00 +00:00
 venue1: "NeurIPS"
 venue2: "Workshop on AutoRL, ICML"
 arxiv: https://arxiv.org/pdf/2404.07266
