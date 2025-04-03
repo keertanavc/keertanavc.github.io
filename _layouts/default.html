@@ -89,49 +89,31 @@
               <br>
               <i>{{post.venue1}}</i>, {{ post.date1 | date: "%Y" }}
               <br>
-              {% if post.arxiv1 %}
-              <a href="{{post.arxiv1}}">[PDF]</a>
+              {% if post.venue2 %}
+              <br>
+              <i>{{post.venue2}}</i>, {{ post.date2 | date: "%Y" }}
+              <br>
               {% endif %}
-              {% if post.video1 %}
-              <a href="{{post.video1}}">[video]</a>
+              {% if post.arxiv %}
+              <a href="{{post.arxiv}}">[PDF]</a>
               {% endif %}
-              {% if post.code1 %}
-              <a href="{{post.code1}}">[code]</a>
+              {% if post.video %}
+              <a href="{{post.video}}">[video]</a>
               {% endif %}
-              {% if post.poster1 %}
-              <a href="{{post.poster1}}">[poster]</a>
+              {% if post.code %}
+              <a href="{{post.code}}">[code]</a>
               {% endif %}
-              {% if post.slides1 %}
-              <a href="{{post.slides1}}">[slides]</a>
+              {% if post.poster %}
+              <a href="{{post.poster}}">[poster]</a>
               {% endif %}
-              {% if post.website1 %}
-              <a href="{{post.website1}}">[website]</a>
+              {% if post.slides %}
+              <a href="{{post.slides}}">[slides]</a>
               {% endif %}
-              {% if post.youtube1 %}
-              <a href="{{post.youtube1}}">[youtube]</a>
+              {% if post.website %}
+              <a href="{{post.website}}">[website]</a>
               {% endif %}
-              % if post.venue2 %}
-              <br><i>{{post.venue2}}</i>, {{ post.date2 | date: "%Y" }}<br>
-              {% if post.arxiv2 %}
-              <a href="{{post.arxiv2}}">[PDF]</a>
-              {% endif %}
-              {% if post.video2 %}
-              <a href="{{post.video2}}">[video]</a>
-              {% endif %}
-              {% if post.code2 %}
-              <a href="{{post.code2}}">[code]</a>
-              {% endif %}
-              {% if post.poster2 %}
-              <a href="{{post.poster2}}">[poster]</a>
-              {% endif %}
-              {% if post.slides2 %}
-              <a href="{{post.slides2}}">[slides]</a>
-              {% endif %}
-              {% if post.website2 %}
-              <a href="{{post.website2}}">[website]</a>
-              {% endif %}
-              {% if post.youtube2 %}
-              <a href="{{post.youtube2}}">[youtube]</a>
+              {% if post.youtube %}
+              <a href="{{post.youtube}}">[youtube]</a>
               {% endif %}
               <p></p>
               {{ post.excerpt }}
