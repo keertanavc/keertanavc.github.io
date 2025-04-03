@@ -88,9 +88,13 @@
               {% endif %} -->
               {{ post.authors }}
               <br>
-              <i>{{ post.venue1 }}</i>, {{ post.date1 | date: "%Y" }}
+              <!-- <i>{{ post.venue1 }}</i>, {{ post.date1 | date: "%Y" }}
               {% if post.venue2 %}
               <i>{{ post.venue2 }}</i>, {{ post.date2 | date: "%Y" }}
+              {% endif %} -->
+              <p><i>{{ post.venue1 }}</i></p>
+              {% if post.venue2 %}
+              <p><i>{{ post.venue2 }}</i></p>
               {% endif %}
               <br>
               {% if post.arxiv %}
