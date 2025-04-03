@@ -85,22 +85,14 @@
             <td style="padding:2.5%;width:100%;vertical-align:middle">
               <h3>{{post.title}}</h3>
               <br>
-              <!-- {{post.authors}}
-              <br>
-              <i>{{post.venue1}}</i>, {{ post.date1 | date: "%Y" }}
-              <br>
-              {% if post.venue2 %}
-              <br>
-              <i>{{post.venue2}}</i>, {{ post.date2 | date: "%Y" }}
-              <br>
               {% endif %} -->
               {{ post.authors }}
               <br>
               <i>{{ post.venue1 }}</i>, {{ post.date1 | date: "%Y" }}
               {% if post.venue2 %}
-              <br>
               <i>{{ post.venue2 }}</i>, {{ post.date2 | date: "%Y" }}
               {% endif %}
+              <br>
               {% if post.arxiv %}
               <a href="{{post.arxiv}}">[PDF]</a>
               {% endif %}
