@@ -4,8 +4,9 @@ title:  "Direct Preference Optimization With Unobserved Preference Heterogeneity
 categories: research
 authors: "<strong>Keertana Chidambaram</strong>, Karthik Vinay Seetharaman, Vasilis Syrgkanis"
 # subtitle: "CCD 2017"
-venue: "Workshop on Language Models for Underserved Communities, NAACL (Oral)"
-arxiv: https://arxiv.org/pdf/2405.15065
+date1:   2025-04-03 00:00:00 +00:00
+venue1: "Workshop on Language Models for Underserved Communities, NAACL (Oral)"
+arxiv1: https://arxiv.org/pdf/2405.15065
 ---
 <!-- Technical and design details of the Intel RealSense R200 and D400 series -->
 
