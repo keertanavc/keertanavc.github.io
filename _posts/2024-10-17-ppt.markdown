@@ -4,9 +4,9 @@ title:  "Personalized Adaptation via In-Context Preference Learning"
 categories: research
 authors: "Allison Lau, Younwoo (Ethan) Choi*, Vahid Balazadeh*, <strong>Keertana Chidambaram</strong>*, Rahul G Krishnan, Vasilis Syrgkanis"
 # subtitle: "CCD 2017"
-date1:   2024-04-10 00:00:00 +00:00
+#date:   2024-04-10 00:00:00 +00:00
 venue1: "Workshop on Adaptive Foundation Models, NeurIPS"
-arxiv1: https://arxiv.org/pdf/2410.14001
+arxiv: https://arxiv.org/pdf/2410.14001
 ---
 <!-- Technical and design details of the Intel RealSense R200 and D400 series -->
 
