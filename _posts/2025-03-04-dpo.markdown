@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Direct Preference Optimization With Unobserved Preference Heterogeneity"
+title:  "Direct Preference Optimization With Unobserved Preference Heterogeneity: The Necessity of Ternary Preferences"
 categories: research
 authors: "<strong>Keertana Chidambaram</strong>, Karthik Vinay Seetharaman, Vasilis Syrgkanis"
 ## subtitle: "CCD 2017"
