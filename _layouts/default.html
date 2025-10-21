@@ -90,9 +90,9 @@
               {% if post.venue2 %}
               <i>{{ post.venue2 }}</i>, {{ post.date2 | date: "%Y" }}
               {% endif %}
-              <br>
+              <div style="margin-top: 0.3em;">
               {% if post.arxiv %}
-              <a href="{{post.arxiv}}">[PDF]</a>
+              <a href="{{post.arxiv}}">[arXiv]</a>
               {% endif %}
               {% if post.video %}
               <a href="{{post.video}}">[video]</a>
