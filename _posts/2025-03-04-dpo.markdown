@@ -4,8 +4,9 @@ title:  "Direct Preference Optimization With Unobserved Preference Heterogeneity
 categories: research
 authors: "<strong>Keertana Chidambaram</strong>, Karthik Vinay Seetharaman, Vasilis Syrgkanis"
 ## subtitle: "CCD 2017"
-date1:   2025-04-03 00:00:00 +00:00
+date1:   2026-05-02 00:00:00 +00:00
 venue1: "AISTATS"
+date2:   2025-05-04 00:00:00 +00:00
 venue2: "🏆 Best Paper Runner-up & Oral @ LM4UC Workshop, NAACL "
 arxiv: https://arxiv.org/pdf/2510.15716
 ---
