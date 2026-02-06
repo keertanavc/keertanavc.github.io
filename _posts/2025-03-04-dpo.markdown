@@ -5,7 +5,7 @@ categories: research
 authors: "<strong>Keertana Chidambaram</strong>, Karthik Vinay Seetharaman, Vasilis Syrgkanis"
 ## subtitle: "CCD 2017"
 date1:   2025-04-03 00:00:00 +00:00
-venue1: "AISTATS, 2026"
+venue1: "AISTATS"
 venue2: "🏆 Best Paper Runner-up & Oral @ LM4UC Workshop, NAACL "
 arxiv: https://arxiv.org/pdf/2510.15716
 ---
