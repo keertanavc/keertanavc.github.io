@@ -26,11 +26,11 @@ links:
 # News list. Newest first; text may contain HTML.
 news:
   - date: "Aug 2026"
-    text: 'New preprint from my Netflix internship on <a href="https://arxiv.org/pdf/2608.00816">post-training generative recommenders</a> is out.'
-  - date: "Aug 2026"
     text: '&ldquo;Pigeonholing&rdquo; accepted to <strong>EMNLP Findings 2026</strong>.'
   - date: "Jun 2026"
     text: 'Two papers on chain-of-thought monitoring submitted to NeurIPS, with Andrew Ilyas.'
+  - date: "Mar 2026"
+    text: 'New preprint from my Netflix internship on <a href="https://arxiv.org/pdf/2608.00816">post-training generative recommenders</a> is out.'
   - date: "Jan 2026"
     text: 'DPO under unobserved preference heterogeneity accepted to <strong>AISTATS 2026</strong>.'
   - date: "Apr 2025"
