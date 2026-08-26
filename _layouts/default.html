@@ -36,115 +36,111 @@
 </head>
 
 <body>
-  <div class="site">
 
-    <aside class="rail">
-      <img class="rail-photo" src="{{ site.baseurl }}/{{ site.avatar }}" alt="{{ site.name }}">
-      <h1 class="rail-name">Keertana<br>Chidambaram</h1>
-      <p class="rail-role">{{ site.role }}</p>
-
-      <ul class="rail-links">
-        {% if site.links.email %}<li><a href="mailto:{{ site.links.email }}">Email</a></li>{% endif %}
-        {% if site.links.scholar %}<li><a href="{{ site.links.scholar }}">Scholar</a></li>{% endif %}
-        {% if site.links.linkedin %}<li><a href="{{ site.links.linkedin }}">LinkedIn</a></li>{% endif %}
-        {% if site.links.github %}<li><a href="{{ site.links.github }}">GitHub</a></li>{% endif %}
-        {% if site.links.cv %}<li><a href="{{ site.links.cv }}">CV</a></li>{% endif %}
-      </ul>
-
-      <nav class="rail-nav">
-        <a href="#about">About</a>
-        <a href="#news">News</a>
-        <a href="#research">Research</a>
-      </nav>
-
+  <header class="masthead">
+    <div class="masthead-inner">
+      <img class="portrait" src="{{ site.baseurl }}/{{ site.avatar }}" alt="{{ site.name }}">
+      <div class="identity">
+        <h1 class="name">{{ site.name }}</h1>
+        <p class="role">{{ site.role }}</p>
+        <ul class="links">
+          {% if site.links.email %}<li><a href="mailto:{{ site.links.email }}">Email</a></li>{% endif %}
+          {% if site.links.scholar %}<li><a href="{{ site.links.scholar }}">Scholar</a></li>{% endif %}
+          {% if site.links.linkedin %}<li><a href="{{ site.links.linkedin }}">LinkedIn</a></li>{% endif %}
+          {% if site.links.github %}<li><a href="{{ site.links.github }}">GitHub</a></li>{% endif %}
+          {% if site.links.cv %}<li><a href="{{ site.links.cv }}">CV</a></li>{% endif %}
+        </ul>
+      </div>
       <button class="theme-btn" id="themeBtn" type="button" aria-label="Switch colour theme">
         <span id="themeIcon">&#9681;</span><span id="themeText">Dark</span>
       </button>
-    </aside>
+    </div>
+  </header>
 
-    <main class="body">
-      <div class="body-inner">
+  <main class="page">
 
-        <section id="about">
-          <h2 class="sec">About</h2>
-          <p class="bio">I am a fifth-year PhD student in Operations Research at the
-            <a href="https://msande.stanford.edu/">Department of Management Science and Engineering</a> at
-            <a href="https://www.stanford.edu/">Stanford University</a>. I am broadly interested in improving the
-            personalization, safety and alignment of generative AI systems. I am part of the
-            <a href="https://web.stanford.edu/group/scail/">Stanford Causal AI Lab</a>, advised by
-            <a href="https://vsyrgkanis.com/">Vasilis Syrgkanis</a>. I also collaborate with
-            <a href="https://andrewilyas.com/">Andrew Ilyas</a>. My research is generously supported by the
-            <a href="https://vpge.stanford.edu/fellowships-funding/sgf">William R. and Sara Hart Kimball Stanford Graduate Fellowship</a>.
-          </p>
-          <p class="bio">I interned at <a href="https://research.netflix.com/">Netflix Research</a> in Summer 2026 and
-            2025, where I worked with <a href="https://adith387.github.io/">Adith Swaminathan</a>,
-            <a href="https://nathankallus.com/">Nathan Kallus</a>, <a href="https://mhjang.github.io/">Myungha Jung</a>
-            and <a href="https://qiulingxu.github.io/">Qiuling Xu</a> on topics in personalizing generative AI systems.
-            Previously I received my master&rsquo;s degree in
-            <a href="https://macss.uchicago.edu/">Computational Social Science</a> (Economics track) from the
-            <a href="https://www.uchicago.edu/en">University of Chicago</a> and my bachelor&rsquo;s degree in
-            <a href="https://mech.iitm.ac.in/">Mechanical Engineering</a> from the
-            <a href="https://www.iitm.ac.in/">Indian Institute of Technology Madras</a>.
-          </p>
-        </section>
+    <section id="about">
+      <h2 class="sec">About</h2>
+      <p class="bio">I am a fifth-year PhD student in Operations Research at the
+        <a href="https://msande.stanford.edu/">Department of Management Science and Engineering</a> at
+        <a href="https://www.stanford.edu/">Stanford University</a>. I am broadly interested in improving the
+        personalization, safety and alignment of generative AI systems. I am part of the
+        <a href="https://web.stanford.edu/group/scail/">Stanford Causal AI Lab</a>, advised by
+        <a href="https://vsyrgkanis.com/">Vasilis Syrgkanis</a>. I also collaborate with
+        <a href="https://andrewilyas.com/">Andrew Ilyas</a>. My research is generously supported by the
+        <a href="https://vpge.stanford.edu/fellowships-funding/sgf">William R. and Sara Hart Kimball Stanford Graduate Fellowship</a>.
+      </p>
+      <p class="bio">I interned at <a href="https://research.netflix.com/">Netflix Research</a> in Summer 2026 and
+        2025, where I worked with <a href="https://adith387.github.io/">Adith Swaminathan</a>,
+        <a href="https://nathankallus.com/">Nathan Kallus</a>, <a href="https://mhjang.github.io/">Myungha Jung</a>
+        and <a href="https://qiulingxu.github.io/">Qiuling Xu</a> on topics in personalizing generative AI systems.
+        Previously I received my master&rsquo;s degree in
+        <a href="https://macss.uchicago.edu/">Computational Social Science</a> (Economics track) from the
+        <a href="https://www.uchicago.edu/en">University of Chicago</a> and my bachelor&rsquo;s degree in
+        <a href="https://mech.iitm.ac.in/">Mechanical Engineering</a> from the
+        <a href="https://www.iitm.ac.in/">Indian Institute of Technology Madras</a>.
+      </p>
+    </section>
 
-        {% if site.news %}
-        <section id="news">
-          <h2 class="sec">News</h2>
-          <ul class="news">
-            {% for item in site.news %}
-            <li>
-              <time>{{ item.date }}</time>
-              <span>{{ item.text }}</span>
-            </li>
-            {% endfor %}
-          </ul>
-        </section>
-        {% endif %}
-
-        <section id="research">
-          <h2 class="sec">Research</h2>
-          <p class="note">* denotes equal contribution</p>
-          <div class="cards">
-            {% for post in site.posts %}
-            {% for cat in post.categories %}
-            {% if cat == 'research' %}
-            <article class="card">
-              <div class="chips">
-                <span class="chip year">{{ post.date1 | date: "%Y" }}</span>
-                {% if post.venue1 contains 'Under review' %}
-                <span class="chip soft">{{ post.venue1 }}</span>
-                {% else %}
-                <span class="chip">{{ post.venue1 }}</span>
-                {% endif %}
-                {% if post.venue2 %}
-                <span class="chip soft">{{ post.venue2 }}</span>
-                {% endif %}
-              </div>
-              <h3 class="card-title">{{ post.title }}</h3>
-              <p class="card-auth">{{ post.authors }}</p>
-              <div class="card-links">
-                {% if post.arxiv %}<a href="{{ post.arxiv }}">arXiv &#8599;</a>{% endif %}
-                {% if post.blog %}<a href="{{ post.blog }}">blog &#8599;</a>{% endif %}
-                {% if post.code %}<a href="{{ post.code }}">code &#8599;</a>{% endif %}
-                {% if post.poster %}<a href="{{ post.poster }}">poster &#8599;</a>{% endif %}
-                {% if post.slides %}<a href="{{ post.slides }}">slides &#8599;</a>{% endif %}
-                {% if post.website %}<a href="{{ post.website }}">website &#8599;</a>{% endif %}
-                {% if post.video %}<a href="{{ post.video }}">video &#8599;</a>{% endif %}
-                {% if post.youtube %}<a href="{{ post.youtube }}">youtube &#8599;</a>{% endif %}
-              </div>
-            </article>
-            {% endif %}
-            {% endfor %}
-            {% endfor %}
-          </div>
-        </section>
-
+    {% if site.news %}
+    <section id="news">
+      <h2 class="sec">News</h2>
+      <!-- Scrolls inside the box: the five newest are visible, the rest are a scroll away. -->
+      <div class="news-box" id="newsBox" tabindex="0" role="region" aria-label="News, scrollable">
+        <ul class="news" id="newsList">
+          {% for item in site.news %}
+          <li>
+            <time>{{ item.date }}</time>
+            <span>{{ item.text }}</span>
+          </li>
+          {% endfor %}
+        </ul>
       </div>
-    </main>
-  </div>
+    </section>
+    {% endif %}
+
+    <section id="research">
+      <h2 class="sec">Research</h2>
+      <p class="note">* denotes equal contribution</p>
+      <div class="cards">
+        {% for post in site.posts %}
+        {% for cat in post.categories %}
+        {% if cat == 'research' %}
+        <article class="card">
+          <div class="chips">
+            <span class="chip year">{{ post.date1 | date: "%Y" }}</span>
+            {% if post.venue1 contains 'Under review' %}
+            <span class="chip soft">{{ post.venue1 }}</span>
+            {% else %}
+            <span class="chip">{{ post.venue1 }}</span>
+            {% endif %}
+            {% if post.venue2 %}
+            <span class="chip soft">{{ post.venue2 }}</span>
+            {% endif %}
+          </div>
+          <h3 class="card-title">{{ post.title }}</h3>
+          <p class="card-auth">{{ post.authors }}</p>
+          <div class="card-links">
+            {% if post.arxiv %}<a href="{{ post.arxiv }}">arXiv &#8599;</a>{% endif %}
+            {% if post.blog %}<a href="{{ post.blog }}">blog &#8599;</a>{% endif %}
+            {% if post.code %}<a href="{{ post.code }}">code &#8599;</a>{% endif %}
+            {% if post.poster %}<a href="{{ post.poster }}">poster &#8599;</a>{% endif %}
+            {% if post.slides %}<a href="{{ post.slides }}">slides &#8599;</a>{% endif %}
+            {% if post.website %}<a href="{{ post.website }}">website &#8599;</a>{% endif %}
+            {% if post.video %}<a href="{{ post.video }}">video &#8599;</a>{% endif %}
+            {% if post.youtube %}<a href="{{ post.youtube }}">youtube &#8599;</a>{% endif %}
+          </div>
+        </article>
+        {% endif %}
+        {% endfor %}
+        {% endfor %}
+      </div>
+    </section>
+
+  </main>
 
   <script>
+    // Theme toggle
     (function () {
       var btn = document.getElementById("themeBtn");
       var icon = document.getElementById("themeIcon");
@@ -165,6 +161,32 @@
         document.documentElement.setAttribute("data-theme", next);
         try { localStorage.setItem("theme", next); } catch (e) {}
         label();
+      });
+    })();
+
+    // News box: size it to exactly five items, whatever their heights.
+    (function () {
+      var box = document.getElementById("newsBox");
+      var list = document.getElementById("newsList");
+      if (!box || !list) { return; }
+      var VISIBLE = 5;
+      function size() {
+        var items = list.children;
+        if (items.length <= VISIBLE) {
+          box.style.maxHeight = "none";
+          box.classList.remove("is-scrollable");
+          return;
+        }
+        var top = list.getBoundingClientRect().top;
+        var cut = items[VISIBLE - 1].getBoundingClientRect().bottom;
+        box.style.maxHeight = Math.round(cut - top) + "px";
+        box.classList.add("is-scrollable");
+      }
+      size();
+      window.addEventListener("resize", size);
+      if (document.fonts && document.fonts.ready) { document.fonts.ready.then(size); }
+      box.addEventListener("scroll", function () {
+        box.classList.toggle("at-end", box.scrollTop + box.clientHeight >= box.scrollHeight - 2);
       });
     })();
   </script>
