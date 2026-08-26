@@ -2,275 +2,172 @@
 <html lang="en">
 
 <head>
-  <!-- Google tag (gtag.js) -->
-<!--   <script async src="https://www.googletagmanager.com/gtag/js?id=G-E00L9PT3V9"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.name }}</title>
+  <meta name="author" content="{{ site.name }}">
+  <meta name="description" content="{{ site.description }}">
+  <link rel="canonical" href="{{ site.url }}">
+  <link rel="icon" href="{{ site.baseurl }}/favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css">
+
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        if (t) { document.documentElement.setAttribute("data-theme", t); }
+      } catch (e) {}
+    })();
+  </script>
+
+  {% if site.google_analytics %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
-    gtag('config', 'G-E00L9PT3V9');
-  </script> -->
-  <title>{{ site.name }}</title>
-
-  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-
-  <meta name="author" content="{{ site.name }}" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-  <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,800|Nunito:300,700' rel='stylesheet' type='text/css'>
+    gtag('config', '{{ site.google_analytics }}');
+  </script>
+  {% endif %}
 </head>
 
 <body>
-  <h1 style="text-align:center">
-    <b>KEERTANA</b> CHIDAMBARAM
-  </h1>
-  <p style="text-align:center">
-    vck [at] stanford [dot] edu &nbsp;&nbsp; &#8226; &nbsp;&nbsp;
-    <a href="https://github.com/keertanavc">GitHub</a> &nbsp;&nbsp; &#8226; &nbsp;&nbsp;
-    <a href="https://scholar.google.com/citations?hl=en&user=ile9Se8AAAAJ">Google Scholar</a>
-  </p>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:60%;vertical-align:middle">
-<!--               <h1 style="text-align:center">
-                Keertana Chidambaram
-              </h1>
-              <p style="text-align:center">
-                <a target="_blank" href="https://mailhide.io/e/B8TyS"> Email</a> &nbsp;/&nbsp;
-                <a href="https://github.com/leonidk">GitHub</a> &nbsp;/&nbsp;
-                <a href="https://scholar.google.com/citations?user=GCYG4GoAAAAJ">Google Scholar</a> &nbsp;/&nbsp;
-                <a href="https://www.linkedin.com/in/lkeselman"> LinkedIn </a>
-              </p> -->
-              <p style="text-align: justify;">I am a fourth-year PhD student in Operations Research at the<a href="https://msande.stanford.edu/"> Department of Management Science and Engineering</a> at <a href="https://www.stanford.edu/">Stanford University</a>. I am a part of the <a href="https://web.stanford.edu/group/scail/">Stanford Causal AI Lab</a> where I am fortunate to be advised by <a href="https://vsyrgkanis.com/">Vasilis Syrgkanis</a>. My research is generously supported by <a href="https://vpge.stanford.edu/fellowships-funding/sgf">the William R. and Sara Hart Kimball Stanford Graduate Fellowship</a>.
-              </p>
-              <p style="text-align: justify;">
-                I interned at <a href="https://research.netflix.com/">Netflix Research</a> in Summer 2025. Previously, I received my master’s degree in <a href="https://macss.uchicago.edu/">Computational Social Science</a> (Economics track) from the <a href="https://www.uchicago.edu/en">University of Chicago</a> and my bachelor’s degree in <a href="https://mech.iitm.ac.in/">Mechanical Engineering</a> from the <a href="https://www.iitm.ac.in/">Indian Institute of Technology Madras</a>.
-              </p>
-<!--               <p style="text-align:center">
-                <a target="_blank" href="https://mailhide.io/e/B8TyS"> Email</a> &nbsp;/&nbsp;
-                <a href="https://github.com/leonidk">GitHub</a> &nbsp;/&nbsp;
-                <a href="https://scholar.google.com/citations?user=GCYG4GoAAAAJ">Google Scholar</a> &nbsp;/&nbsp;
-                <a href="https://www.linkedin.com/in/lkeselman"> LinkedIn </a>
-              </p> -->
-            </td>
-            <td style="padding:1% 2.5%;width:100%;vertical-align:middle">
-              <img style="width:100%;max-width:100%" alt="profile photo" src="images/keertana.jpeg">
-            </td>
-          </tr>
-        </table>
+  <div class="site">
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:1% 2.5%;width:100%;vertical-align:middle">
-              <h2>Research Papers</h2>
-              <br>
-              <b>*denotes equal contribution</b>
-            </td>
-          </tr>
-        </table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          {% for post in site.posts %}
-          {% for cat in post.categories %}
-          {% if cat == 'research' %}
-          <tr>
-            <td style="padding:1% 2.5%;width:100%;vertical-align:middle">
-              <h3>{{post.title}}</h3>
-              <br>
-              {{ post.authors }}
-              <br>
-              <i>{{ post.venue1 }}</i>, {{ post.date1 | date: "%Y" }}
-              <br>
-              {% if post.venue2 %}
-              <i>{{ post.venue2 }}</i>, {{ post.date2 | date: "%Y" }}
-              {% endif %}
-              <div style="margin-top: 0.3em;">
-              {% if post.arxiv %}
-              <a href="{{post.arxiv}}">[arXiv]</a>
-              {% endif %}
-              {% if post.blog %}
-              <a href="{{post.blog}}">[blog]</a>
-              {% endif %}
-              {% if post.video %}
-              <a href="{{post.video}}">[video]</a>
-              {% endif %}
-              {% if post.code %}
-              <a href="{{post.code}}">[code]</a>
-              {% endif %}
-              {% if post.poster %}
-              <a href="{{post.poster}}">[poster]</a>
-              {% endif %}
-              {% if post.slides %}
-              <a href="{{post.slides}}">[slides]</a>
-              {% endif %}
-              {% if post.website %}
-              <a href="{{post.website}}">[website]</a>
-              {% endif %}
-              {% if post.youtube %}
-              <a href="{{post.youtube}}">[youtube]</a>
-              {% endif %}
-              <p></p>
-              {{ post.excerpt }}
-            </td>
-          </tr>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </table>
-        <!-- <br>
-        <br>
-        <br> -->
-<!--         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr> updates
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Intel Projects</h2>
-              <p>Besides my work on the RealSense depth sensors and the publications above, a sampling of my publicly disclosed work
-              </p>
-            </td>
-          </tr>
-        </table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <aside class="rail">
+      <img class="rail-photo" src="{{ site.baseurl }}/{{ site.avatar }}" alt="{{ site.name }}">
+      <h1 class="rail-name">Keertana<br>Chidambaram</h1>
+      <p class="rail-role">{{ site.role }}</p>
 
-          {% for post in site.posts %}
-          {% for cat in post.categories %}
-          {% if cat == 'Intel' %}
-          <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>{{post.title}}</h3>
-              <br>
-              <em>{{post.categories}} {{post.course}}</em>
-              <br>
-              {{ post.date | date: "%Y-%m-%d" }}
+      <ul class="rail-links">
+        {% if site.links.email %}<li><a href="mailto:{{ site.links.email }}">Email</a></li>{% endif %}
+        {% if site.links.scholar %}<li><a href="{{ site.links.scholar }}">Scholar</a></li>{% endif %}
+        {% if site.links.linkedin %}<li><a href="{{ site.links.linkedin }}">LinkedIn</a></li>{% endif %}
+        {% if site.links.github %}<li><a href="{{ site.links.github }}">GitHub</a></li>{% endif %}
+        {% if site.links.cv %}<li><a href="{{ site.links.cv }}">CV</a></li>{% endif %}
+      </ul>
 
-              <br>
-              {% if post.website %}
-              <a href="{{post.website}}">website</a> /
-              {% endif %}
-              {% if post.paper %}
-              <a href="{{post.paper}}">paper</a> /
-              {% endif %}
-              {% if post.patent %}
-              <a href="{{post.patent}}">patent</a> /
-              {% endif %}
-              {% if post.patent2 %}
-              <a href="{{post.patent2}}">patent #2</a> /
-              {% endif %}
-              {% if post.patent3 %}
-              <a href="{{post.patent3}}">patent #3</a> /
-              {% endif %}
-              {% if post.video %}
-              <a href="{{post.video}}">video</a> /
-              {% endif %}
-              {% if post.video2 %}
-              <a href="{{post.video2}}">video #2</a> /
-              {% endif %}
-              {% if post.code %}
-              <a href="{{post.code}}">code</a> /
-              {% endif %}
-              {% if post.poster %}
-              <a href="{{post.poster}}">poster</a> /
-              {% endif %}
-              {% if post.slides %}
-              <a href="{{post.slides}}">slides</a> /
-              {% endif %}
-              <p></p>
-              {{ post.excerpt }}
-            </td>
-          </tr>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </table>
-        <br>
-        <br>
-        <br>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Other Projects</h2>
-              <p> These include coursework, side projects and unpublished research work.
-              </p>
-            </td>
-          </tr>
-        </table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+      <nav class="rail-nav">
+        <a href="#about">About</a>
+        <a href="#news">News</a>
+        <a href="#research">Research</a>
+      </nav>
 
-          {% for post in site.posts %}
-          {% for cat in post.categories %}
-          {% if cat != 'research' and cat != 'Intel' %}
-          <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>{{post.title}}</h3>
-              <br>
-              <em>{{post.categories}} {{post.course}}</em>
-              <br>
-              {{ post.date | date: "%Y-%m-%d" }}
+      <button class="theme-btn" id="themeBtn" type="button" aria-label="Switch colour theme">
+        <span id="themeIcon">&#9681;</span><span id="themeText">Dark</span>
+      </button>
+    </aside>
 
-              <br>
-              {% if post.website %}
-              <a href="{{post.website}}">website</a> /
-              {% endif %}
-              {% if post.paper %}
-              <a href="{{post.paper}}">paper</a> /
-              {% endif %}
-              {% if post.patent %}
-              <a href="{{post.patent}}">patent</a> /
-              {% endif %}
-              {% if post.patent2 %}
-              <a href="{{post.patent2}}">patent #2</a> /
-              {% endif %}
-              {% if post.patent3 %}
-              <a href="{{post.patent3}}">patent #3</a> /
-              {% endif %}
-              {% if post.video %}
-              <a href="{{post.video}}">video</a> /
-              {% endif %}
-              {% if post.video2 %}
-              <a href="{{post.video2}}">video #2</a> /
-              {% endif %}
-              {% if post.code %}
-              <a href="{{post.code}}">code</a> /
-              {% endif %}
-              {% if post.poster %}
-              <a href="{{post.poster}}">poster</a> /
-              {% endif %}
-              {% if post.slides %}
-              <a href="{{post.slides}}">slides</a> /
-              {% endif %}
-              <p></p>
-              {{ post.excerpt }}
-            </td>
-          </tr>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </table>
- -->
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:0px">
-              <br>
-              <p style="text-align:center;font-size:small;">
-                Design and source code from <a style="font-size:small;" href="https://jonbarron.info">Jon Barron's website</a>. Icon is from <a href="https://www.flaticon.com/"> Flaticon </a>.
-              </p>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
+    <main class="body">
+      <div class="body-inner">
+
+        <section id="about">
+          <h2 class="sec">About</h2>
+          <p class="bio">I am a fifth-year PhD student in Operations Research at the
+            <a href="https://msande.stanford.edu/">Department of Management Science and Engineering</a> at
+            <a href="https://www.stanford.edu/">Stanford University</a>. I am broadly interested in improving the
+            personalization, safety and alignment of generative AI systems. I am part of the
+            <a href="https://web.stanford.edu/group/scail/">Stanford Causal AI Lab</a>, advised by
+            <a href="https://vsyrgkanis.com/">Vasilis Syrgkanis</a>. I also collaborate with
+            <a href="https://andrewilyas.com/">Andrew Ilyas</a>. My research is generously supported by the
+            <a href="https://vpge.stanford.edu/fellowships-funding/sgf">William R. and Sara Hart Kimball Stanford Graduate Fellowship</a>.
+          </p>
+          <p class="bio">I interned at <a href="https://research.netflix.com/">Netflix Research</a> in Summer 2026 and
+            2025, where I worked with <a href="https://adith387.github.io/">Adith Swaminathan</a>,
+            <a href="https://nathankallus.com/">Nathan Kallus</a>, <a href="https://mhjang.github.io/">Myungha Jung</a>
+            and <a href="https://qiulingxu.github.io/">Qiuling Xu</a> on topics in personalizing generative AI systems.
+            Previously I received my master&rsquo;s degree in
+            <a href="https://macss.uchicago.edu/">Computational Social Science</a> (Economics track) from the
+            <a href="https://www.uchicago.edu/en">University of Chicago</a> and my bachelor&rsquo;s degree in
+            <a href="https://mech.iitm.ac.in/">Mechanical Engineering</a> from the
+            <a href="https://www.iitm.ac.in/">Indian Institute of Technology Madras</a>.
+          </p>
+        </section>
+
+        {% if site.news %}
+        <section id="news">
+          <h2 class="sec">News</h2>
+          <ul class="news">
+            {% for item in site.news %}
+            <li>
+              <time>{{ item.date }}</time>
+              <span>{{ item.text }}</span>
+            </li>
+            {% endfor %}
+          </ul>
+        </section>
+        {% endif %}
+
+        <section id="research">
+          <h2 class="sec">Research</h2>
+          <p class="note">* denotes equal contribution</p>
+          <div class="cards">
+            {% for post in site.posts %}
+            {% for cat in post.categories %}
+            {% if cat == 'research' %}
+            <article class="card">
+              <div class="chips">
+                <span class="chip year">{{ post.date1 | date: "%Y" }}</span>
+                {% if post.venue1 contains 'Under review' %}
+                <span class="chip soft">{{ post.venue1 }}</span>
+                {% else %}
+                <span class="chip">{{ post.venue1 }}</span>
+                {% endif %}
+                {% if post.venue2 %}
+                <span class="chip soft">{{ post.venue2 }}</span>
+                {% endif %}
+              </div>
+              <h3 class="card-title">{{ post.title }}</h3>
+              <p class="card-auth">{{ post.authors }}</p>
+              <div class="card-links">
+                {% if post.arxiv %}<a href="{{ post.arxiv }}">arXiv &#8599;</a>{% endif %}
+                {% if post.blog %}<a href="{{ post.blog }}">blog &#8599;</a>{% endif %}
+                {% if post.code %}<a href="{{ post.code }}">code &#8599;</a>{% endif %}
+                {% if post.poster %}<a href="{{ post.poster }}">poster &#8599;</a>{% endif %}
+                {% if post.slides %}<a href="{{ post.slides }}">slides &#8599;</a>{% endif %}
+                {% if post.website %}<a href="{{ post.website }}">website &#8599;</a>{% endif %}
+                {% if post.video %}<a href="{{ post.video }}">video &#8599;</a>{% endif %}
+                {% if post.youtube %}<a href="{{ post.youtube }}">youtube &#8599;</a>{% endif %}
+              </div>
+            </article>
+            {% endif %}
+            {% endfor %}
+            {% endfor %}
+          </div>
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+  <script>
+    (function () {
+      var btn = document.getElementById("themeBtn");
+      var icon = document.getElementById("themeIcon");
+      var text = document.getElementById("themeText");
+      function isDark() {
+        var stamp = document.documentElement.getAttribute("data-theme");
+        if (stamp) { return stamp === "dark"; }
+        return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+      }
+      function label() {
+        var dark = isDark();
+        icon.innerHTML = dark ? "&#9680;" : "&#9681;";
+        text.textContent = dark ? "Light" : "Dark";
+      }
+      label();
+      btn.addEventListener("click", function () {
+        var next = isDark() ? "light" : "dark";
+        document.documentElement.setAttribute("data-theme", next);
+        try { localStorage.setItem("theme", next); } catch (e) {}
+        label();
+      });
+    })();
+  </script>
 </body>
 
 </html>
