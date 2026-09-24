@@ -2,12 +2,13 @@
 layout: post
 title:  "Direct Preference Optimization With Unobserved Preference Heterogeneity"
 categories: research
+tag: personalization
 authors: "<strong>Keertana Chidambaram</strong>, Karthik Vinay Seetharaman, Vasilis Syrgkanis"
 ## subtitle: "CCD 2017"
 date1:   2026-04-03 00:00:00 +00:00
 date2:   2025-04-03 00:00:00 +00:00
 venue1: "AISTATS"
-venue2: "🏆 Best Paper Runner-up & Oral @ LM4UC Workshop, NAACL"
+venue2: "🏆 Best Paper Runner-up &amp; Oral, LM4UC Workshop @ NAACL 2025"
 arxiv: https://arxiv.org/pdf/2510.15716
 ---
 <!-- Technical and design details of the Intel RealSense R200 and D400 series -->

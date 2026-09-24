@@ -2,6 +2,7 @@
 layout: post
 title:  "Personalized Adaptation via In-Context Preference Learning"
 categories: research
+tag: personalization
 authors: "Allison Lau, Younwoo (Ethan) Choi*, Vahid Balazadeh*, <strong>Keertana Chidambaram</strong>*, Rahul G Krishnan, Vasilis Syrgkanis"
 # subtitle: "CCD 2017"
 date1:   2024-04-10 00:00:00 +00:00
