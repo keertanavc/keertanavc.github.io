@@ -95,7 +95,7 @@
         <article class="pub">
           <div class="meta">
             <span class="year">{{ post.date1 | date: "%Y" }}</span>
-            {% if post.tag %}<span class="tag tag-{{ post.tag }}">{{ post.tag }}</span>{% endif %}
+            {% for t in post.tags %}<span class="tag tag-{{ t }}">{{ t }}</span>{% endfor %}
           </div>
           <div>
             <p class="title">{{ post.title }}</p>

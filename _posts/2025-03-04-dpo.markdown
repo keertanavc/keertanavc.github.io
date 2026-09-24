@@ -2,7 +2,7 @@
 layout: post
 title:  "Direct Preference Optimization With Unobserved Preference Heterogeneity"
 categories: research
-tag: personalization
+tags: [personalization, alignment]
 authors: "<strong>Keertana Chidambaram</strong>, Karthik Vinay Seetharaman, Vasilis Syrgkanis"
 ## subtitle: "CCD 2017"
 date1:   2026-04-03 00:00:00 +00:00
