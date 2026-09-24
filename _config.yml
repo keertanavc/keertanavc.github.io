@@ -25,6 +25,8 @@ links:
 
 # News list. Newest first; text may contain HTML.
 news:
+  - date: "Sep 2026"
+    text: '&ldquo;Corrupt Plans, Clean Traces&rdquo; accepted to <strong>NeurIPS 2026</strong>. See you there!'
   - date: "Aug 2026"
     text: '&ldquo;Pigeonholing&rdquo; accepted to <strong>EMNLP Findings 2026</strong>.'
   - date: "Jun 2026"
